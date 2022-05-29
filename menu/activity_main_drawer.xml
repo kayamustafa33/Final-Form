@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    android:screenOrientation="portrait">
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/group0">
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home"
+                android:title="Home" />
+        </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/nav_share_note"
+            android:icon="@drawable/ic_note_add"
+            android:title="Share Note" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item android:id="@+id/nav_my_note"
+            android:title="My Notes"
+            android:icon="@drawable/ic_person_drawer"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app"
+            android:title="Logout" />
+    </group>
+
+    <group android:id="@+id/group4"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_rate"
+            android:title="Rate"
+            android:icon="@drawable/ic_star_rate"/>
+    </group>
+
+    <group android:id="@+id/group5"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_feedback"
+            android:title="Feedback"
+            android:icon="@drawable/ic_feedback"/>
+    </group>
+
+</menu>

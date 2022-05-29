@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/feedback_cardView"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="40dp"
+        android:padding="10dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#fffdd0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/feedback_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:id="@+id/close_feedback"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/deletebtn"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/feedbackimage"/>
+
+        <EditText
+            android:id="@+id/feedback_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_input"
+            android:hint="Enter your feedback"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/custom_chat_icon"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/feedback_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="#00BFFF"
+            android:text="GO TO GMAIL"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

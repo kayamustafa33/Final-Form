@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="30dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#E0F7FA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Log Out"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logoutimage"
+            android:forceDarkAllowed="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you sure you want to log out?"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="110dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/yes_log_out"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:text="Yes"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="#FF0000"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/no_log_out"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|bottom"
+            android:text="No"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="#008000"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

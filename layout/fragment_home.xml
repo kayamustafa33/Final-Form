@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#121212"
+    android:screenOrientation="portrait"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_mother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/final_form_welcome_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which notes do you need?"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textSize="40sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/email_verify_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="VERIFY NOW"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/button_bg"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/not_verify_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Not Verified!"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card1"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/engineer_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:src="@drawable/engineer_preview_rev_1" />
+
+                <TextView
+                    android:id="@+id/engineer_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Engineering"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card2"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/law_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/law2" />
+
+                <TextView
+                    android:id="@+id/law_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Law"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card3"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/education_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="134dp"
+                    android:src="@drawable/education" />
+
+                <TextView
+                    android:id="@+id/education_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Education"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card4"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/arts_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="124dp"
+                    android:src="@drawable/psychology2" />
+
+                <TextView
+                    android:id="@+id/arts_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Arts and Sciences"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card5"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/health_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="137dp"
+                    android:src="@drawable/nurses" />
+
+                <TextView
+                    android:id="@+id/health_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Health Sciences"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view6"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card6"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/economic_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="121dp"
+                    android:src="@drawable/economi" />
+
+                <TextView
+                    android:id="@+id/economic_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Economics and Administrative Sciences"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view7"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card7"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/architecture_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="122dp"
+                    android:background="@color/white"
+                    android:src="@drawable/mimar" />
+
+                <TextView
+                    android:id="@+id/architecture_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Architecture and Fine Arts"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view8"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card8"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/pharmacy_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:src="@drawable/eczane" />
+
+                <TextView
+                    android:id="@+id/pharmacy_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Pharmacy"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view9"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:onClick="card9"
+                app:cardBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/dentistry_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="137dp"
+                    android:src="@drawable/dentistry" />
+
+                <TextView
+                    android:id="@+id/dentistry_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_gravity="bottom"
+                    android:text="Faculty of Dentistry"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
